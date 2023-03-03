@@ -52,6 +52,22 @@ df=df.astype("float")
 
 print(df)
 
+import numpy
+import talib
+
+
+close = numpy.random.random(100)
+
+print(close)
+
+moving_average = talib.SMA(close, timperiod=10)
+
+print(moving_average)
+
+rsi = talib.RSI(close)
+
+print(rsi)
+
 import mplfinance as mpl
 
 mpl.plot(df, type='candle')
