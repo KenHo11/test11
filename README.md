@@ -78,6 +78,6 @@ from darts.models import ExponentialSmoothing
 
 model = ExponentialSmoothing(df)
 
-model.fit(train)
+model.fit(df)
 
 prediction = model.predict(len(val))
